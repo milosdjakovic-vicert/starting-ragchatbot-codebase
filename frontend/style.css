@@ -245,19 +245,33 @@ header h1 {
     color: var(--text-secondary);
 }
 
+.sources-content ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+}
+
+.sources-content li {
+    margin: 0.375rem 0;
+    line-height: 1.5;
+}
+
 .sources-content a {
-    color: #2563eb;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s ease;
+    color: #60a5fa;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .sources-content a:hover {
-    border-bottom-color: #2563eb;
+    color: #93c5fd;
+    text-decoration-thickness: 2px;
 }
 
 .sources-content a:visited {
-    color: #7c3aed;
+    color: #a78bfa;
 }
 
 /* Markdown formatting styles */
