@@ -245,6 +245,21 @@ header h1 {
     color: var(--text-secondary);
 }
 
+.sources-content a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.sources-content a:hover {
+    border-bottom-color: #2563eb;
+}
+
+.sources-content a:visited {
+    color: #7c3aed;
+}
+
 /* Markdown formatting styles */
 .message-content h1,
 .message-content h2,
