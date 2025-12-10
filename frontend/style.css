@@ -481,29 +481,22 @@ header h1 {
     font-weight: 600;
     color: var(--text-secondary);
     cursor: pointer;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border-color);
-    background: var(--background);
-    border-radius: 8px;
+    padding: 0.5rem 0;
+    border: none;
+    background: none;
+    border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    transition: all 0.2s ease;
-    text-align: center;
+    transition: color 0.2s ease;
+    text-align: left;
 }
 
 .new-chat-button:hover {
-    background: var(--surface-hover);
-    border-color: var(--primary-color);
     color: var(--primary-color);
 }
 
 .new-chat-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px var(--focus-ring);
-}
-
-.new-chat-button:active {
-    transform: scale(0.98);
+    color: var(--primary-color);
 }
 
 /* Sidebar Headers */
