@@ -54,3 +54,51 @@ The application will be available at:
 - Web Interface: `http://localhost:8000`
 - API Documentation: `http://localhost:8000/docs`
 
+## Development
+
+### Code Quality Tools
+
+This project uses automated code quality tools to maintain consistent code style and catch common errors.
+
+#### Available Commands
+
+```bash
+make help      # Display all available commands
+make format    # Auto-format code with black and isort
+make lint      # Run flake8 linter
+make check     # Run all quality checks (without modifying code)
+make test      # Run pytest tests
+```
+
+#### Before Committing Code
+
+```bash
+# 1. Format your code
+make format
+
+# 2. Verify all checks pass
+make check
+
+# 3. Commit your changes
+git add .
+git commit -m "Your commit message"
+```
+
+#### Tools Included
+
+- **black**: Automatic code formatting (88 char line length)
+- **isort**: Import organization and sorting
+- **flake8**: PEP 8 compliance and linting
+- **mypy**: Type checking (optional, run manually with `uv run mypy backend/ main.py`)
+
+#### Using Shell Scripts
+
+Alternative to make commands:
+```bash
+./scripts/format.sh    # Format code
+./scripts/lint.sh      # Run linter
+./scripts/check.sh     # Run all checks
+```
+
+For more details, see `frontend-changes.md`.
+
