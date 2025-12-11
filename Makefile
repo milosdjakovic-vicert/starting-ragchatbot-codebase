@@ -1,9 +1,8 @@
-.PHONY: format lint check test install setup run help
+.PHONY: format lint check test install run help
 
 help:
 	@echo "Available commands:"
-	@echo "  make setup      - First-time setup: install all dependencies (recommended)"
-	@echo "  make install    - Install base dependencies only"
+	@echo "  make install    - Install all dependencies"
 	@echo "  make format     - Format code with black and isort"
 	@echo "  make lint       - Run linters (flake8, mypy)"
 	@echo "  make check      - Run all quality checks without modifying code"
@@ -11,15 +10,12 @@ help:
 	@echo "  make run        - Start the application"
 
 install:
-	uv sync
-
-setup:
 	@echo "Installing all dependencies..."
 	uv sync
 	@echo "Installing dev tools (black, isort, flake8, mypy, pytest)..."
 	uv pip install black isort flake8 mypy
 	uv pip install pytest pytest-asyncio pytest-mock pytest-cov httpx
-	@echo "✓ Setup complete! You can now run 'make test' or 'make check'"
+	@echo "✓ Installation complete! You can now run 'make test' or 'make check'"
 
 format:
 	uv run isort backend/ main.py
