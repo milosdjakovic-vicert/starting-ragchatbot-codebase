@@ -669,7 +669,7 @@ details[open] .suggested-header::before {
 }
 
 .course-title-item:first-child {
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
 }
 
 .no-courses, .loading, .error {
