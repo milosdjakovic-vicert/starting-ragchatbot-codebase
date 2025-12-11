@@ -16,6 +16,7 @@ ENV/
 
 # ChromaDB
 backend/chroma_db/
+chroma_db/
 
 # Uploads
 uploads/
@@ -28,7 +29,9 @@ uploads/
 
 # OS
 .DS_Store
-Thumbs.dbchroma_db/
+Thumbs.db
+
+# Test artifacts
 .coverage*
 htmlcov/
 .pytest_cache/
