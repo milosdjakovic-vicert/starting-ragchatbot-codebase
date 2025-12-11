@@ -35,3 +35,9 @@ Thumbs.db
 .coverage*
 htmlcov/
 .pytest_cache/
+
+# Git worktrees
+.trees/
+
+# Playwright MCP artifacts
+.playwright-mcp/
