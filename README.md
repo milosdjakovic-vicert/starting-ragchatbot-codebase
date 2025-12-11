@@ -54,3 +54,44 @@ The application will be available at:
 - Web Interface: `http://localhost:8000`
 - API Documentation: `http://localhost:8000/docs`
 
+## Testing
+
+The application includes a comprehensive test suite with 120 tests covering all core functionality.
+
+### Running Tests
+
+**Quick test run:**
+```bash
+uv run pytest
+```
+
+**With verbose output:**
+```bash
+uv run pytest -v
+```
+
+**With coverage report:**
+```bash
+uv run pytest --cov=backend --cov-report=term-missing
+```
+
+### Test Structure
+
+The test suite covers:
+- **Session Management** (17 tests) - Conversation history and session handling
+- **Document Processing** (17 tests) - Text chunking and metadata extraction
+- **Vector Store** (29 tests) - ChromaDB integration and semantic search
+- **Search Tools** (26 tests) - Course search and outline retrieval
+- **AI Generator** (12 tests) - Claude API integration and tool calling
+- **RAG System** (14 tests) - Main orchestrator and query processing
+- **API Models** (5 tests) - Pydantic model validation
+
+**Coverage:** 81% overall with core modules at 96-100%
+
+### Test Documentation
+
+For detailed testing information, see:
+- `tests/README.md` - Comprehensive test documentation
+- `TESTING_GUIDE.md` - Quick reference guide
+- `TEST_SUMMARY.md` - Implementation details
+
